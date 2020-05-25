@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Archivos Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title> DULCERIA | LUCAS </title>
+
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="container-fluid fixed-top bg-white border-bottom">
+        <nav class="container navbar navbar-expand-lg navbar-light bg-white">
+            <!--Logo-->
+            <a href="index.html" class="navbar-brand"><h4>DULCERIA LUCAS</h4></a>
+            <!--movil-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+            <!--Url-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <il class="nav-item active">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </il>
+                    <il class="navbar-item">
+                        <a href="acerca_de.html" class="nav-link">Acerca de</a>
+                    </il>
+                    <il class="navbar-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </il>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container py-5 my-5 ">
+        <div class="d-flex align-items-end flex-column bd-highlight mb-3 d-md-none">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal">Filtrar por</button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                        <h3>Filtrar por:</h3>
+                                        <form action="">
+                                            <h5 class="mt-4">Oferta</h5>
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">Oferta <span class="badge badge-danger">8</span></label>
+                                            </div> 
+                        
+                                            <h5 class="mt-4">Precio</h5>
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">$0 MXN - $10 MXN</label>
+                                            </div> 
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">$11 MXN - $40 MXN</label>
+                                            </div> 
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">$21 MNX - $80 MXN</label>
+                                            </div>
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">$22 MNX - $120 MXN</label>
+                                            </div>
+                        
+                                            <h5 class="mt-4">Marca</h5>
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">Lucas</label>
+                                            </div> 
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">Duvalin</label>
+                                            </div> 
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">Pulparindo</label>
+                                            </div>
+                                            <div class="form-check mt-2"> 
+                                                <input class="form-check-input" type="checkbox" value="" id="">
+                                                <label class="form-check-label" for="">Pelon</label>
+                                            </div> 
+                                        </form>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Ver resultados</button>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="row">
+            <div class="col-md-3 my-5 d-none d-md-block">
+                <h3>Filtrar por:</h3>
+                <form action="">
+                    <h5 class="mt-4">Oferta</h5>
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Oferta <span class="badge badge-danger">8</span></label>
+                    </div> 
+
+                    <h5 class="mt-4">Precio</h5>
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">$0 MXN - $10 MXN</label>
+                    </div> 
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">$11 MXN - $40 MXN</label>
+                    </div> 
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">$21 MNX - $80 MXN</label>
+                    </div>
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">$22 MNX - $120 MXN</label>
+                    </div>
+
+                    <h5 class="mt-4">Marca</h5>
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Lucas</label>
+                    </div> 
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Duvalin</label>
+                    </div> 
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Pulparindo</label>
+                    </div>
+                    <div class="form-check mt-2"> 
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="">Pelon</label>
+                    </div> 
+                </form>
+            </div>
+            <div class="col-md-9 my-5 ">
+                <div class="card-deck mp-2">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="/vendor/img/articulo1.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">Muecas chamoy<span class="badge badge-danger ml-2">-20%</span></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="producto.html" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                            <div class="card text-center">
+                                <img class="card-img-top" src="/vendor/img/articulo2.png">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pulparindo</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo3.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Duvalín<span class="badge badge-danger ml-2">-20%</span></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo4.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Trident</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo5.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Bocadín</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo6.jpg">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Mentos<span class="badge badge-danger ml-2">-20%</span></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo1.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Muecas chamoy</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo2.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Muecas chamoy<span class="badge badge-danger ml-2">-20%</span></h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 my-3">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="/vendor/img/articulo5.png">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Muecas chamoy</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nam.<p>
+                                    <a href="#" class="btn colobtnn text-white">Más detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center bg-light py-4 my-2 border-top">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="h1 pt-3">
+                    <a href="#" class="text-dark"><i class="fab fa-facebook-f mr-4"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-twitter mr-4"></i></a>  
+                    <a href="#" class="text-dark"><i class="fab fa-instagram mr-4"></i></a>
+                    <a href="#" class="text-dark"><i class="fas fa-envelope mr-4"></i></a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    <p class="copyright text-muted my-3">Copyright &copy; 2018 · Dulceria Lucas</p>
+</footer>
+
+<!-- Archivos Javascript-->
+<script src="js/bootstrap.min.js"></script>
+<script src="vendor/js/jquery-3.3.1.slim.min.js"></script>
+<script src="vendor/js/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

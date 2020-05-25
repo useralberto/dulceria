@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Archivos Css -->
+    <link rel="stylesheet" href="vendor/css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- En linea -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+
+    <title> Panel de Administración </title>
+
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div class="container-fluid fixed-top bg-info border-bottom">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-info">
+            <!--Logo-->
+            <a href="cpanel.html" class="navbar-brand"><h4>DULCERIA LUCAS</h4></a>
+            <!--movil-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+            <!--Url-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <il class="nav-item">
+                        <a class="nav-link">Bienvenido/a, Admin</a>
+                    </il>
+                    <il class="navbar-item">
+                        <a href="login.html" class="nav-link">cerrar sesión</a>
+                    </il>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container pt-4 mt-5">
+            <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="cpanel.html">Inicio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Categoria</li>
+                    </ol>
+            </nav>
+    </div>
+    <!--Contenido-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                 <h3 class="pt-2 font-weight-light">Sección de categorías</h3>
+                 <p class="font-weight-light">En esta sección puede modificar o eliminar cualquier categoría registrada</p>
+            </div>
+            <div class="col-12 my-3">
+                <form class="form-row">
+                        <div class="col-6">
+                            <input class="form-control mr-2" type="search" placeholder="" aria-label="">
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </div>
+                </form>
+            </div>
+            <div class="col-12 my-3">
+                <p class=" d-inline">Acción: </p>
+                <a href="" class="text-info mx-3" data-toggle="modal" data-target="#categoria"><i class="fas fa-edit"></i> Editar</a> 
+                <!-- Modal -->
+                <div class="modal fade" id="categoria" tabindex="-1" role="dialog" aria-labelledby="categoria" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="marca">Editar categoría</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-left">
+                                    <form action="">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-">
+                                                <label for="">Clave</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="">Nombre</label>
+                                                <input type="text" class="form-control" id="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <a href="" class="text-danger"><i class="fas fa-trash-alt"></i> Eliminar</a> 
+            </div>
+            <div class="col-12">
+                <div class="table-responsive-md">
+                    <table class="table table-hover">
+                        <thead class="text-muted thead-dark">
+                            <tr>
+                                <th scope="col" class="text-center" width="50">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+                                    </div>
+                                </th>
+                                <th scope="col">Clave</th>
+                                <th scope="col">Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6 class="title text-truncate">1589764</h6>
+                                </td>
+                                <td>Dulces</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6 class="title text-truncate">1579862</h6>
+                                </td>
+                                <td>Decoraciones</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archivos Javascript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="vendor/js/popper.min.js"></script>
+    <!-- En linea -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
