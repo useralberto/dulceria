@@ -199,7 +199,7 @@
 
     const get_paciente = () => new Promise( (resolver, reject)=>{
         let makeRequests = makeRequest();
-        makeRequests.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+        makeRequests.open('GET', 'https://apiportafolio.herokuapp.com/api/v1/proyectos/list/', true);
         
         makeRequests.onload = event => {
           if(makeRequests.status == 200 && makeRequests.readyState == 4){
