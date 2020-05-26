@@ -174,6 +174,60 @@
 
 
     <!-- Archivos Javascript-->
+       <script>
+
+    const makeRequest = () => {
+      var xhttp = false;
+
+      if (window.XMLHttpRequest) {
+        xhttp = new XMLHttpRequest();
+        if (xhttp.overrideMimeType) {
+          xhttp.overrideMimeType('application/json');
+        }
+      } else if (window.ActiveXObject) {
+        try {
+          xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+        }catch (Exception) {
+          try {  
+            xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (Exception) {}
+        }
+      }
+
+      return !xhttp ?  false : xhttp;
+    };
+
+    const get_paciente = () => new Promise( (resolver, reject)=>{
+        let makeRequests = makeRequest();
+        makeRequests.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+        
+        makeRequests.onload = event => {
+          if(makeRequests.status == 200 && makeRequests.readyState == 4){
+            resolver(JSON.parse(makeRequests.responseText));
+          }else{
+            reject(makeRequests.statusText);
+            console.error(makeRequests.responseText);
+          }
+        };
+        // makeRequests.setRequestHeader('Content-type', 'text/html; charset=UTF-8');
+        // makeRequests.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        // makeRequests.withCredentials = true; 
+        makeRequests.send();
+    });
+
+    get_paciente().then( resolver =>{
+        console.log(resolver); 
+    }).catch( reject =>{
+      console.error(`Ocurrio un error: ${reject}`);
+    });
+
+
+    
+    
+
+    </script>
+    
+    
     <script src="vendor/js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="vendor/js/popper.min.js"></script>
